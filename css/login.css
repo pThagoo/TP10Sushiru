@@ -1,0 +1,93 @@
+/* General */
+body {
+    font-family: 'Noto Serif', serif;
+    background-color: #f9f4ee; /* Fondo suave */
+    color: #333; /* Texto oscuro para contraste */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del Login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f3ec; /* Fondo del contenedor */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Caja de Login */
+.login-box {
+    background-color: #fff; /* Fondo blanco limpio */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0ddd7; /* Borde sutil */
+}
+
+/* Título */
+.login-box h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #5c5b5b; /* Gris oscuro suave */
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e8e4da; /* Línea decorativa */
+    margin-bottom: 20px;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 18px;
+    color: #595959; /* Gris suave para el texto */
+    margin-bottom: 10px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d6d1c4; /* Borde suave */
+    border-radius: 5px;
+    background-color: #fff;
+    color: #595959;
+    outline: none;
+}
+
+/* Botón de inicio de sesión */
+button {
+    background-color: #94b49f; /* Verde suave */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #829f88; /* Verde más oscuro en hover */
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+    .login-box {
+        padding: 20px;
+    }
+    button {
+        padding: 10px;
+    }
+}

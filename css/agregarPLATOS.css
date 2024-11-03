@@ -1,0 +1,171 @@
+/*Estilos generales */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f4f1e6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Titulo */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #555;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0ddd7;
+}
+
+/* Formulario */
+form {
+    background-color: #faf8f3;
+    padding: 20px;
+    border: 1px solid #e0ddd7;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="number"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dcd8ce;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box; 
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px; 
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Ingredientes */
+h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0ddd7;
+    padding-bottom: 5px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+/* estilo de boton */
+button {
+    background-color: #9f9b88;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #857d67;
+}
+
+/* Boton de envio */
+input[type="submit"] {
+    background-color: #8a9986;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #747e6d;
+    margin-left: 5px;
+}
+
+/* Estilo de tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dcd8ce;
+}
+
+th {
+    background-color: #f0eee8;
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+    color: #333;
+}
+
+tr:nth-child(even) td {
+    background-color: #f9f7f3;
+}
+
+/* Borrar */
+.delete-link {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+.delete-link:hover {
+    color: #b52b27;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table, th, td {
+        display: block;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+    }
+}

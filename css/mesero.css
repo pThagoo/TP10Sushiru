@@ -1,0 +1,152 @@
+/* Body Styles */
+body {
+    font-family: 'Noto Serif', serif;
+    background-color: #f9f4ee;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #5c5b5b;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e8e4da;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #e0ddd7;
+}
+
+/* Label */
+label {
+    font-size: 18px;
+    color: #595959;
+    margin-bottom: 10px;
+    display: block;
+}
+
+select, input[type="number"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d6d1c4;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #595959;
+}
+
+select {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #94b49f;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #829f88;
+}
+
+/* platos */
+#platos-container {
+    margin-top: 20px;
+    background-color: #f7f3ec;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.plato {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*  */
+.cantidad-controls {
+    display: flex;
+    align-items: center;
+}
+
+.cantidad-btn {
+    background-color: #e0ddd7;
+    border: none;
+    padding: 8px 12px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.cantidad-btn:hover {
+    background-color: #c7c3b7;
+}
+
+/* cantidad Input */
+.cantidad-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #d6d1c4;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* añadir platos */
+#add-dish {
+    background-color: #c9a87c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+}
+
+#add-dish:hover {
+    background-color: #b9916a;
+}
+
+/* Mensaje de error y resolucion */
+p {
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+p[style*="color:green;"] {
+    background-color: #e9f6e5;
+    color: #4a7c4e;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+p[style*="color:red;"] {
+    background-color: #fbeae9;
+    color: #a9453f;
+    padding: 10px;
+    border-radius: 8px;
+}
